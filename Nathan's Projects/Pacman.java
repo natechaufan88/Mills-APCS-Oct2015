@@ -1,10 +1,12 @@
 /* Nathan Chau
  * October 1, 2015
  * ASCII Art: Pacman
+ * This program will print out pacman with the desired amount of dots for pacman to eat.
  */
 
 public class Pacman {
-    public static final int DOTS = 5;
+    //change the variable PACDOTS below to the number of pacdots you want pacman to eat.
+    public static final int PACDOTS = 5;
     
     public static void main(String[] args) {
         top();
@@ -56,7 +58,7 @@ public class Pacman {
             System.out.print("@");
         for (int k=1; k<=1; k++)
             System.out.print(" ");
-        dotEnds(DOTS);
+        dotEnds(PACDOTS);
     }
     
     public static void line8() {
@@ -67,7 +69,7 @@ public class Pacman {
             System.out.print("@");
         for (int k=1; k<=5; k++)
             System.out.print(" ");
-        dotMiddle(DOTS);
+        dotMiddle(PACDOTS);
     }
     
     public static void line9() {
@@ -78,7 +80,7 @@ public class Pacman {
             System.out.print("@");
         for (int k=1; k<=4; k++)
             System.out.print(" ");
-        dotMiddle(DOTS);
+        dotMiddle(PACDOTS);
     }
     
     public static void dotEnds(int num) {
