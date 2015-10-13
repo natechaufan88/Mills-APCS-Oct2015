@@ -21,14 +21,11 @@ public class Equestria {
         double secondDistance = distance(x1, y1, x3, y3);
         double thirdDistance = distance(x2, y2, x3, y3);
         double firstAngle = Math.toDegrees(Math.acos((-(Math.pow(firstDistance, 2)) + 
-            Math.pow(secondDistance, 2) +  Math.pow(thirdDistance, 2)) / 
-            (2 * secondDistance * thirdDistance)));
+            Math.pow(secondDistance, 2) +  Math.pow(thirdDistance, 2)) / (2 * secondDistance * thirdDistance)));
         double secondAngle = Math.toDegrees(Math.acos((-(Math.pow(secondDistance, 2)) + 
-            Math.pow(firstDistance, 2) + Math.pow(thirdDistance, 2)) / 
-            (2 * firstDistance * thirdDistance)));
+            Math.pow(firstDistance, 2) + Math.pow(thirdDistance, 2)) / (2 * firstDistance * thirdDistance)));
         double thirdAngle = Math.toDegrees(Math.acos((-(Math.pow(thirdDistance, 2)) + 
-            Math.pow(secondDistance, 2) + Math.pow(firstDistance, 2)) / 
-            (2 * secondDistance * firstDistance)));
+            Math.pow(secondDistance, 2) + Math.pow(firstDistance, 2)) / (2 * secondDistance * firstDistance)));
         return thirdAngle;
     }  
     
